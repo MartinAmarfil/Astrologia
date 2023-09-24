@@ -4,45 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrologia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="clase_encabezado">
         <nav>
-            <ul class="clase_encabezado_menu">
-                <li>
-                    <a href="../index.html" class="clase_encabezado_menu_vinculo">Inicio</a>
+            <ul class="nav nav-tabs clase_encabezado_menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" class="clase_encabezado_menu_vinculo">Inicio</a>
                 </li>
-                <li>
-                    <a href="https://es.wikipedia.org/wiki/Hor%C3%B3scopo" class="clase_encabezado_menu_vinculo" target="_blank">Historia(Wikipedia)</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://es.wikipedia.org/wiki/Hor%C3%B3scopo" class="clase_encabezado_menu_vinculo" target="_blank">Historia(Wikipedia)</a>
                 </li>
-                <li>
-                    <a href="../pages/horoscopo.html" class="clase_encabezado_menu_vinculo">Horóscopo</a>
+                <li class="nav-item">
+                    <a class="nav-link active clase_menu_activo" aria-current="page" href="../pages/horoscopo.html" class="clase_encabezado_menu_vinculo">Horóscopo</a>
                 </li>
-                <li>
-                    <a href="../pages/compatibilidad.html" class="clase_encabezado_menu_vinculo">Compatibilidad</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/compatibilidad.html" class="clase_encabezado_menu_vinculo">Compatibilidad</a>
                 </li>
-                <li>
-                    <a href="../pages/quienessomos.html" class="clase_encabezado_menu_vinculo">Quienes somos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/quienessomos.html" class="clase_encabezado_menu_vinculo">Quienes somos</a>
                 </li>
             </ul>
         </nav>
-        <a href="../index.html">Volver</a>
-        <img src="../image/horoscopo_main.jpg" alt="" class="clase_encabezado_imagen">
-        <h1 class="clase_h1">Horóscopo según fecha</h1>
-        <img src="../image/horoscopo.png" alt="" class="clase_encabezado_imagen">
+        <section>
+            <div class="clase_titulo_container">
+                <img src="../image/horoscopo_main.jpg" alt="" class="clase_titulo_imagen">
+                <h1 class="clase_h1 clase_titulo_texto">Horóscopo según fecha</h1>
+                <img src="../image/horoscopo.png" alt="" class="clase_titulo_imagen">
+            </div>
+        </section>
     </header>
     <h2 class="clase_h2">Seleccione la fecha de nacimiento para obtener el horoscopo correspondiente:</h2>
     <form action="post">
-        <label for="">Fecha</label>
+        <label class="clase_texto_form">Fecha</label>
         <input type="date" id="fecha_horoscopo" required>
-        <input type="submit">
+        <input class="clase_boton" type="submit">
     </form>
     <div id="texto_horoscopo_seleccionado"  class="clase_texto">
         "Luego de seleccionar una fecha se mostrará la información asociada al signo correspondiente."
     </div>
-    <p class="clase_texto">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa distinctio perspiciatis omnis blanditiis fugit accusantium voluptatibus quo corporis aliquid molestias consectetur, recusandae optio at. Eveniet aliquam illum libero consequuntur deserunt.
+    <p class="clase_texto clase_texto_padding">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aspernatur aut modi ipsam, vel commodi expedita perferendis repellendus eos accusantium, veniam facilis dolorum. Maiores iste est consectetur rerum dignissimos odit dolorum possimus culpa voluptates ullam amet vero fugiat deserunt, similique natus magni assumenda tempore a libero. Accusantium, qui architecto suscipit temporibus voluptatibus voluptatem et, quasi ipsa minima provident odio laudantium nam ducimus fuga laboriosam praesentium rerum sunt, a in esse assumenda ipsam inventore dignissimos dolorum. Iusto, est? Modi minus magni facilis non illo saepe recusandae quae expedita id delectus labore maxime beatae repudiandae rem officiis, velit repellat neque quo consequuntur reiciendis similique pariatur doloremque repellendus. Corporis quisquam vel eum possimus veritatis id iure quaerat debitis adipisci ratione, quos at nemo nam sunt vero magni non consequuntur dolorum odit rerum provident! Nihil, animi distinctio. Nulla doloribus omnis incidunt necessitatibus praesentium! Quod praesentium nesciunt tempore quisquam ratione? Ea voluptatum dolore eligendi veniam deleniti sequi magnam impedit odio blanditiis rerum, itaque ad placeat nam laboriosam hic aperiam nemo nostrum error dolorem quasi soluta eos numquam. Autem modi, in doloremque, temporibus deserunt dolores sint tenetur labore voluptas amet odio sunt error esse at provident. Dolorem laborum consequatur similique id. Maiores quaerat aut nulla vel.     
     </p>
+    <p class="clase_texto">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum consectetur, libero maiores temporibus, obcaecati nulla ipsam, cupiditate eum omnis veritatis rem eos suscipit? Iure nihil nesciunt delectus voluptatibus vel aliquam vero, inventore similique odio autem sequi ut nulla quae atque excepturi accusamus temporibus molestiae rerum incidunt impedit repellendus accusantium tenetur vitae ipsum. Nisi nam veniam consequatur molestias corrupti maiores sequi natus cupiditate, non fugiat repellat quo eligendi minus! Veniam velit sed fugiat numquam rerum molestiae assumenda corporis aut, debitis quae alias eos distinctio provident est esse deserunt temporibus consequuntur delectus dolore, error voluptas facilis recusandae saepe quod! Culpa iste vel illo modi, praesentium consectetur in. Praesentium et necessitatibus quod commodi nam accusantium officia ea ex dolores rerum. Fugiat vel dolorem eum facilis, ex repellat animi dolorum saepe ducimus ipsa pariatur, natus architecto dignissimos harum. Est, provident? Veritatis optio possimus totam beatae aspernatur cum? Consequuntur odio optio eos nihil necessitatibus omnis?
+    </p>
+    <p class="clase_texto">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum consectetur, libero maiores temporibus, obcaecati nulla ipsam, cupiditate eum omnis veritatis rem eos suscipit? Iure nihil nesciunt delectus voluptatibus vel aliquam vero, inventore similique odio autem sequi ut nulla quae atque excepturi accusamus temporibus molestiae rerum incidunt impedit repellendus accusantium tenetur vitae ipsum. Nisi nam veniam consequatur molestias corrupti maiores sequi natus cupiditate, non fugiat repellat quo eligendi minus! Veniam velit sed fugiat numquam rerum molestiae assumenda corporis aut, debitis quae alias eos distinctio provident est esse deserunt temporibus consequuntur delectus dolore, error voluptas facilis recusandae saepe quod! Culpa iste vel illo modi, praesentium consectetur in. Praesentium et necessitatibus quod commodi nam accusantium officia ea ex dolores rerum. Fugiat vel dolorem eum facilis, ex repellat animi dolorum saepe ducimus ipsa pariatur, natus architecto dignissimos harum. Est, provident? Veritatis optio possimus totam beatae aspernatur cum? Consequuntur odio optio eos nihil necessitatibus omnis?
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

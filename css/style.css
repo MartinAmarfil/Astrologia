@@ -1,6 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Reseteo tamaño rem - con 62.5% equivaldría a 10px */
+html{
+    font-size: 100%;
+}
+
 /* Encabezados de todas las páginas */
 .clase_encabezado{
-    background-color:rgb(67, 140, 218); 
+    background-color:rgb(67, 140, 218);
 }
 
 /* Formato menu encabezado */
@@ -20,6 +31,7 @@
 /* Titulo principal */
 .clase_h1{
     text-align: center;
+    height: auto;
     font-size: 2rem;
 }
 
@@ -27,18 +39,70 @@
 .clase_h2{
     text-align: left;
     font-size: 1.5rem;
+    padding: 1.5rem;
 }
 
 /* Textos de información */
 .clase_texto{
     text-align: justify;
     font-size: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
-/* Formato de las imagenes en el encabezado */
-.clase_encabezado_imagen{
+.clase_texto_padding{
+    padding-top: 2rem;
+}
+
+.clase_video{
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.clase_texto_form{
+    color: rgb(41, 5, 123);
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.clase_titulo_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.clase_titulo_imagen{
     width: 100px;
     height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.clase_titulo_texto{
+    width: 344px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clase_boton{
+    color: rgb(11, 3, 81);
+    background-color: aqua;
+    padding: 4px 10px 4px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.clase_boton:hover{
+    background-color: rgb(4, 118, 34);
+}
+
+#texto_horoscopo_seleccionado{
+    font-size: small;
+    font-family: cursive;
 }
 
 /* Formato de las imagenes en el pie de pagina (distintas secciones) */
@@ -54,3 +118,19 @@
     color:rgb(2, 2, 57);
     font-size: 1rem;
 }
+
+.nav-link{
+    color: rgb(12, 3, 138);
+}
+
+@media only screen and (max-width: 658px){
+    .clase_titulo_texto{
+        order: 1;
+    }
+
+    .clase_video{
+        width: 90%;
+        height: 100%;
+    }
+}
+
