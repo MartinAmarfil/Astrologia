@@ -1,0 +1,56 @@
+/* Encabezados de todas las páginas */
+.clase_encabezado{
+    background-color:rgb(67, 140, 218); 
+}
+
+/* Formato menu encabezado */
+.clase_encabezado_menu{
+    background-color: rgb(177, 174, 174);
+    list-style: none; /* Elimina los puntos de los links de la lista*/
+}
+
+/* Formato del texto de los vinculos del menu encabezado */
+.clase_encabezado_menu_vinculo{
+    text-decoration: none; /* Elimina el subrayado de los links de la lista */
+    color: rgb(27, 4, 86);
+    font-size: 1.2rem;
+    font-weight: bold; /* negrita */
+}
+
+/* Titulo principal */
+.clase_h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Titulos secundarios */
+.clase_h2{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+/* Textos de información */
+.clase_texto{
+    text-align: justify;
+    font-size: 1rem;
+}
+
+/* Formato de las imagenes en el encabezado */
+.clase_encabezado_imagen{
+    width: 100px;
+    height: 100px;
+}
+
+/* Formato de las imagenes en el pie de pagina (distintas secciones) */
+.clase_pie_imagen{
+    width: 100px;
+    height: 100px;
+}
+
+/* Formato del texto de los vinculos de los contactos */
+.clase_vinculo_contactos{
+    text-decoration: none; /* Elimina el subrayado de los links de la lista */
+    text-align: center;
+    color:rgb(2, 2, 57);
+    font-size: 1rem;
+}

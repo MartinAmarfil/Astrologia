@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrologia</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="clase_encabezado">
+        <nav>
+            <ul class="clase_encabezado_menu">
+                <li>
+                    <a href="../index.html" class="clase_encabezado_menu_vinculo">Inicio</a>
+                </li>
+                <li>
+                    <a href="https://es.wikipedia.org/wiki/Hor%C3%B3scopo" class="clase_encabezado_menu_vinculo" target="_blank">Historia(Wikipedia)</a>
+                </li>
+                <li>
+                    <a href="../pages/horoscopo.html" class="clase_encabezado_menu_vinculo">Horóscopo</a>
+                </li>
+                <li>
+                    <a href="../pages/compatibilidad.html" class="clase_encabezado_menu_vinculo">Compatibilidad</a>
+                </li>
+                <li>
+                    <a href="../pages/quienessomos.html" class="clase_encabezado_menu_vinculo">Quienes somos</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="../index.html">Volver</a>
+        <img src="../image/horoscopo_main.jpg" alt="" class="clase_encabezado_imagen">
+        <h1 class="clase_h1">Compatibilidad</h1>
+        <img src="../image/compatibilidad.png" alt="" class="clase_encabezado_imagen">
+    </header>
+    <h2 class="clase_h2">Seleccione los signos para ver su compatibilidad:</h2>
+    <form action="post">
+        <label for="signo_1">1er signo zodiacal</label>
+        <select name="signo_1" id="signo_1" required>
+            <option>Aries</option>
+            <option>Tauro</option>
+            <option>Geminis</option>
+            <option>Cancer</option>
+            <option>Leo</option>
+            <option>Virgo</option>
+            <option>Libra</option>
+            <option>Escorpio</option>
+            <option>Sagitario</option>
+            <option>Capricornio</option>
+            <option>Acuario</option>
+            <option>Piscis</option>
+        </select>
+        <label for="signo_2">2do signo zodiacal</label>
+        <select name="signo_2" id="signo_2" required>
+            <option>Aries</option>
+            <option>Tauro</option>
+            <option>Geminis</option>
+            <option>Cancer</option>
+            <option>Leo</option>
+            <option>Virgo</option>
+            <option>Libra</option>
+            <option>Escorpio</option>
+            <option>Sagitario</option>
+            <option>Capricornio</option>
+            <option>Acuario</option>
+            <option>Piscis</option>
+        </select>
+        <input type="submit">
+    </form>
+    <div id="texto_horoscopo_seleccionado" class="clase_texto">
+        "Luego de seleccionar los signos se mostrará la información asociada a su compatibilidad."
+    </div>
+    <p class="clase_texto">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa distinctio perspiciatis omnis blanditiis fugit accusantium voluptatibus quo corporis aliquid molestias consectetur, recusandae optio at. Eveniet aliquam illum libero consequuntur deserunt.
+    </p>
+</body>
+</html>
