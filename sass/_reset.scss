@@ -1,0 +1,10 @@
+* {
+    margin: 0px;
+    @include espaciado(0px, 0px, 0px, 0px);
+}
+
+
+/* Reseteo tamaño rem - con 62.5% equivaldría a 10px */
+html{
+    font-size: 100%;
+}

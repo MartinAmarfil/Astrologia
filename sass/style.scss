@@ -1,0 +1,116 @@
+// PROFESORES: Entiendo que las carpetas se generan para una estructura compartida.
+// Pero en proyectos chicos (como este) me parecía demasiado armar tremenda estructura.
+// Por esto solo generé los archivos que necesitaba en el mismo directorio.
+// Obviamente, en caso de necesitarlo ya conozco como trabajan en general.
+@import "utilities";
+@import "reset";
+
+
+/* Encabezados de todas las páginas */
+.clase_encabezado{
+    background-color: $color-celeste;
+}
+
+/* Formato menu encabezado */
+.clase_encabezado_menu{
+    background-color: $color-fondo;
+    list-style: none; /* Elimina los puntos de los links de la lista*/
+}
+
+/* Formato del texto de los vinculos del menu encabezado */
+.clase_encabezado_menu_vinculo{
+    text-decoration: none; /* Elimina el subrayado de los links de la lista */
+    @include letra(1.2rem, null, $color-azul);
+    font-weight: bold; /* negrita */
+}
+
+/* Titulo principal */
+.clase_h1{
+    @include letra(2rem, center, null);
+    @include medidas(null, auto);
+}
+
+/* Titulos secundarios */
+.clase_h2{
+    @include letra(1.5rem, left, null);
+    @include espaciado(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+}
+
+/* Textos de información */
+.clase_texto{
+    @include letra(1rem, justify, null);
+    @include espaciado(null, 1.5rem, null, 1.5rem);
+}
+
+.clase_texto_padding{
+    @include espaciado(2rem, null, null, null);
+}
+
+.clase_video{
+    @include flex(null,center,null,null);
+
+    @include espaciado(null, 1rem, null, 1rem);
+}
+
+.clase_texto_form{
+    @include letra(null, null, $color-azul);
+    font-weight: bold;
+    @include espaciado(null, null, null, 1rem);
+}
+
+.clase_titulo_container{
+    @include flex(center,center,3rem,wrap);
+}
+
+.clase_titulo_imagen{
+    @include medidas(100px, 100px);
+    @include flex(center,null,null,null);
+}
+
+.clase_titulo_texto{
+    @include medidas(344px, null);
+    @include flex(center,center,null,null);
+}
+
+.clase_boton{
+    color: $color-azul-claro; // rgb(11, 3, 81);
+    background-color: aqua;
+    @include espaciado(4px, 10px, 4px, 10px);
+    border-radius: 50%;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.clase_boton:hover{
+    background-color: $color-verde;
+}
+
+#texto_horoscopo_seleccionado{
+    @include letra(small, null, null);
+    font-family: cursive;
+}
+
+/* Formato de las imagenes en el pie de pagina (distintas secciones) */
+.clase_pie_imagen{
+    @include medidas(100px, 100px);
+}
+
+/* Formato del texto de los vinculos de los contactos */
+.clase_vinculo_contactos{
+    text-decoration: none; /* Elimina el subrayado de los links de la lista */
+    @include letra(1rem, center, $color-azul);
+}
+
+.nav-link{
+    @include letra(null, null, $color-azul-claro);
+}
+
+@media only screen and (max-width: 658px){
+    .clase_titulo_texto{
+        order: 1;
+    }
+
+    .clase_video{
+        @include medidas(90%,100%);
+    }
+}
+

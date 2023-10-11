@@ -1,0 +1,33 @@
+//colores
+$color-fondo: rgb(177, 174, 174);
+$color-azul: rgb(27, 4, 86);
+$color-azul-claro: rgb(12, 3, 138);
+$color-verde: rgb(4, 118, 34);
+$color-celeste: rgb(67, 140, 218);
+
+//funciones
+@mixin medidas($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin espaciado($arriba, $derecha, $abajo, $izquierda){
+    padding-top: $arriba;
+    padding-right: $derecha;
+    padding-bottom: $abajo;
+    padding-left: $izquierda;
+}
+
+@mixin letra($tam, $alineacion, $color){
+    color: $color;
+    font-size: $tam; 
+    text-align: $alineacion;
+}
+
+@mixin flex($alineacion, $justify, $gap, $wrap){
+    display: flex;
+    align-items: $alineacion;
+    justify-content: $justify;
+    gap: $gap;
+    flex-wrap: $wrap;
+}
