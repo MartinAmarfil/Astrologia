@@ -9,20 +9,21 @@
 /* Encabezados de todas las páginas */
 .clase_encabezado{
     background-color: $color-celeste;
+
+    /* Formato menu encabezado */
+    &_menu{
+        background-color: $color-fondo;
+        list-style: none; /* Elimina los puntos de los links de la lista*/
+        
+        /* Formato del texto de los vinculos del menu encabezado */
+        &_vinculo{
+            text-decoration: none; /* Elimina el subrayado de los links de la lista */
+            @include letra(1.2rem, null, $color-azul);
+            font-weight: bold; /* negrita */
+        }
+    }
 }
 
-/* Formato menu encabezado */
-.clase_encabezado_menu{
-    background-color: $color-fondo;
-    list-style: none; /* Elimina los puntos de los links de la lista*/
-}
-
-/* Formato del texto de los vinculos del menu encabezado */
-.clase_encabezado_menu_vinculo{
-    text-decoration: none; /* Elimina el subrayado de los links de la lista */
-    @include letra(1.2rem, null, $color-azul);
-    font-weight: bold; /* negrita */
-}
 
 /* Titulo principal */
 .clase_h1{
@@ -40,36 +41,37 @@
 .clase_texto{
     @include letra(1rem, justify, null);
     @include espaciado(null, 1.5rem, null, 1.5rem);
-}
 
-.clase_texto_padding{
-    @include espaciado(2rem, null, null, null);
+    &_padding{
+        @include espaciado(2rem, null, null, null);
+    }
+    
+    &_form{
+        @include letra(null, null, $color-azul);
+        font-weight: bold;
+        @include espaciado(null, null, null, 1rem);
+    }
 }
 
 .clase_video{
     @include flex(null,center,null,null);
-
     @include espaciado(null, 1rem, null, 1rem);
 }
 
-.clase_texto_form{
-    @include letra(null, null, $color-azul);
-    font-weight: bold;
-    @include espaciado(null, null, null, 1rem);
-}
+.clase_titulo_{
+    &container{
+        @include flex(center,center,3rem,wrap);
+    }
 
-.clase_titulo_container{
-    @include flex(center,center,3rem,wrap);
-}
+    &imagen{
+        @include medidas(100px, 100px);
+        @include flex(center,null,null,null);
+    }
 
-.clase_titulo_imagen{
-    @include medidas(100px, 100px);
-    @include flex(center,null,null,null);
-}
-
-.clase_titulo_texto{
-    @include medidas(344px, null);
-    @include flex(center,center,null,null);
+    &texto{
+        @include medidas(344px, null);
+        @include flex(center,center,null,null);
+    }
 }
 
 .clase_boton{
@@ -79,9 +81,12 @@
     border-radius: 50%;
     font-weight: bold;
     margin-left: 1rem;
-}
-.clase_boton:hover{
-    background-color: $color-verde;
+    transition: all 0.25s ease-in;
+
+    &:hover{
+        background-color: $color-verde;
+        transform: scale(125%);
+    }
 }
 
 #texto_horoscopo_seleccionado{
@@ -89,9 +94,13 @@
     font-family: cursive;
 }
 
-/* Formato de las imagenes en el pie de pagina (distintas secciones) */
-.clase_pie_imagen{
-    @include medidas(100px, 100px);
+.clase_pie{
+    @include medidas(190px, null);
+
+        /* Formato de las imagenes en el pie de pagina (distintas secciones) */
+    &_imagen{
+        @include medidas(100px, 100px);
+    }
 }
 
 /* Formato del texto de los vinculos de los contactos */

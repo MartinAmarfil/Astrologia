@@ -15,15 +15,13 @@ html {
 /* Encabezados de todas las páginas */
 .clase_encabezado {
   background-color: rgb(67, 140, 218);
+  /* Formato menu encabezado */
 }
-
-/* Formato menu encabezado */
 .clase_encabezado_menu {
   background-color: rgb(177, 174, 174);
   list-style: none; /* Elimina los puntos de los links de la lista*/
+  /* Formato del texto de los vinculos del menu encabezado */
 }
-
-/* Formato del texto de los vinculos del menu encabezado */
 .clase_encabezado_menu_vinculo {
   text-decoration: none; /* Elimina el subrayado de los links de la lista */
   color: rgb(27, 4, 86);
@@ -55,21 +53,19 @@ html {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
-
 .clase_texto_padding {
   padding-top: 2rem;
+}
+.clase_texto_form {
+  color: rgb(27, 4, 86);
+  font-weight: bold;
+  padding-left: 1rem;
 }
 
 .clase_video {
   display: flex;
   justify-content: center;
   padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-.clase_texto_form {
-  color: rgb(27, 4, 86);
-  font-weight: bold;
   padding-left: 1rem;
 }
 
@@ -80,14 +76,12 @@ html {
   gap: 3rem;
   flex-wrap: wrap;
 }
-
 .clase_titulo_imagen {
   width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
 }
-
 .clase_titulo_texto {
   width: 344px;
   display: flex;
@@ -105,10 +99,11 @@ html {
   border-radius: 50%;
   font-weight: bold;
   margin-left: 1rem;
+  transition: all 0.25s ease-in;
 }
-
 .clase_boton:hover {
   background-color: rgb(4, 118, 34);
+  transform: scale(125%);
 }
 
 #texto_horoscopo_seleccionado {
@@ -116,7 +111,10 @@ html {
   font-family: cursive;
 }
 
-/* Formato de las imagenes en el pie de pagina (distintas secciones) */
+.clase_pie {
+  width: 190px;
+  /* Formato de las imagenes en el pie de pagina (distintas secciones) */
+}
 .clase_pie_imagen {
   width: 100px;
   height: 100px;
