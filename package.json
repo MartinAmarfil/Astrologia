@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass --include-pach scss sass/styles.scss css/style.css",
+    "build": "node-sass --include-pach scss sass/style.scss css/style.css",
     "build-watch": "nodemon -e scss -x \"npm run build\"",
     "compilar": "sass --watch sass/style.scss css/style.css"
   },
