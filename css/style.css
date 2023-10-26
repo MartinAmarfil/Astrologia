@@ -46,6 +46,10 @@ html {
   padding-left: 1.5rem;
 }
 
+body {
+  background-image: radial-gradient(500px 500px, rgb(77, 241, 178), rgb(101, 244, 232));
+}
+
 /* Textos de información */
 .clase_texto {
   font-size: 1rem;
@@ -53,8 +57,11 @@ html {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
+.clase_texto_negrita {
+  font-weight: bold;
+}
 .clase_texto_padding {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 .clase_texto_form {
   color: rgb(27, 4, 86);
@@ -112,10 +119,17 @@ html {
 }
 
 .clase_pie {
+  justify-content: space-between;
+}
+.clase_pie_articulo {
   width: 190px;
   /* Formato de las imagenes en el pie de pagina (distintas secciones) */
 }
-.clase_pie_imagen {
+.clase_pie_articulo_link {
+  font-size: 1rem;
+  text-align: center;
+}
+.clase_pie_articulo_imagen {
   width: 100px;
   height: 100px;
 }

@@ -1,7 +1,3 @@
-// PROFESORES: Entiendo que las carpetas se generan para una estructura compartida.
-// Pero en proyectos chicos (como este) me parecía demasiado armar tremenda estructura.
-// Por esto solo generé los archivos que necesitaba en el mismo directorio.
-// Obviamente, en caso de necesitarlo ya conozco como trabajan en general.
 @import "utilities";
 @import "reset";
 
@@ -37,13 +33,22 @@
     @include espaciado(1.5rem, 1.5rem, 1.5rem, 1.5rem);
 }
 
+body{
+    // background-image: linear-gradient(to right, rgb(53, 151, 212), rgb(130, 206, 244));
+    background-image: radial-gradient(500px 500px, $color-body-centro,$color-body-externo);
+}
+
 /* Textos de información */
 .clase_texto{
     @include letra(1rem, justify, null);
     @include espaciado(null, 1.5rem, null, 1.5rem);
 
+    &_negrita{
+        font-weight: bold;
+    }
+
     &_padding{
-        @include espaciado(2rem, null, null, null);
+        @include espaciado(1.5rem, null, null, null);
     }
     
     &_form{
@@ -95,13 +100,21 @@
 }
 
 .clase_pie{
-    @include medidas(190px, null);
+    justify-content:space-between;
 
+    &_articulo{
+        @include medidas(190px, null);
+    
+        &_link {
+            @include letra(1rem, center, null);
+        }
         /* Formato de las imagenes en el pie de pagina (distintas secciones) */
-    &_imagen{
+        &_imagen{
         @include medidas(100px, 100px);
+        }
     }
 }
+
 
 /* Formato del texto de los vinculos de los contactos */
 .clase_vinculo_contactos{
