@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass --include-pach scss sass/style.scss css/style.css --output public",
-    "build-watch": "nodemon -e scss -x \"npm run build\"",
+    "build": "node-sass --output public --include-pach scss sass/style.scss css/style.css",
+    "build-sass": "node-sass --include-pach scss sass/style.scss css/style.css --output public",
+    "build-watch": "nodemon -e scss -x \"npm run build-sass\"",
     "compilar": "sass --watch sass/style.scss css/style.css"
   },
   "keywords": [],
